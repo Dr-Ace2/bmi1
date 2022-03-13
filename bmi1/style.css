@@ -1,0 +1,72 @@
+body{
+    background-color:darkcyan;
+    padding: 10%;
+}
+
+
+
+#input{
+    background-color:blue;
+    
+
+    
+}
+#output{
+   background-color: red;
+   
+  
+}
+#footer{
+    text-align: center;
+    font-size: 3px;
+    font-weight: bolder;
+    color: blueviolet;
+    background-color: yellow;
+}
+#footer h5{
+
+    font-size: 15px;
+    
+}
+#param{
+    padding-top: 6%;
+    padding-bottom:1%;
+    font-size: 30px;
+}
+
+#comment1{
+    background-color: beige;
+    display: none;
+    /* text-align: center; */
+}
+.comment{
+   color:black;
+   font-style:italic ;
+   text-shadow: 2px 5px  yellowgreen;
+   font-size: 20px;
+   text-align: center;
+}
+#reset{
+       margin-left : 10px;
+}
+#ybmi{
+    font-size: 20px;
+    margin-top: 40px;
+    text-shadow: 2px 2px 4px #ff0000;
+}
+
+    
+#interpret{
+    font-size: 20px;
+    margin-top: 30px;
+    font-style: italic;
+
+}
+#result{
+    margin-top: 40px;
+    font-size: 20px;
+ 
+}
+.btn{
+    margin-bottom: 20px;
+}
