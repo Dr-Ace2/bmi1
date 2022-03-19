@@ -246,12 +246,12 @@ let convert3;
       function calculate(){
 
          if(!validatew()){
-            alert("invalid input")        
+                
             return
          }
 
          if(!validateh()){
-            alert("invalid input")      
+   
             return
          }
            
