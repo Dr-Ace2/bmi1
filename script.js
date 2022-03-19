@@ -261,7 +261,7 @@ let convert3;
               }
 
         
-           let others=[outputp,outputf,outputi]
+           let others=[outputp,outputf,outputi,error1,error2,error3]
 
            for ( let other of others){
               
