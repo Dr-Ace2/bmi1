@@ -22,6 +22,8 @@ let outputi = document.getElementById("outputi");
 let error1= document.getElementById("error1")
 let error2= document.getElementById("error2")
 let error3= document.getElementById("error3")
+let error4= document.getElementById("error4")
+let error5= document.getElementById("error5")
 
 let a;
 let b;
@@ -54,6 +56,9 @@ let convert3;
       show.addEventListener("click" , showit)
 
 
+      // validation of pounds
+
+
       function validatep(){
          if(isNaN(pound.value)){
           error1.innerHTML="Pls, enter a number"  
@@ -73,6 +78,8 @@ let convert3;
       pound.addEventListener("blur" ,validatep)
 
 
+      // validation of foot
+
       function validatef(){
          if(isNaN(foot.value)){
           error2.innerHTML="Pls, enter a number"  
@@ -90,6 +97,8 @@ let convert3;
       }
       foot.addEventListener("blur" , validatef)
 
+
+      // validation of inches
 
       function validatei(){
          if(isNaN(inch.value)){
@@ -112,7 +121,7 @@ let convert3;
 
 
 
-
+      // converts pound to kilogram
 
       function convertp(){
          if ( 
@@ -134,6 +143,7 @@ let convert3;
 
       
 
+      // converts foot to metres
 
       function convertf(){  
          
@@ -155,6 +165,7 @@ let convert3;
 
 
       
+//   converts inches to metres
 
       function converti(){
 
@@ -173,7 +184,76 @@ let convert3;
       }
       buttni.addEventListener( "click" , converti);
 
+
+
+
+
+
+
+         // validation of bmi calc
+
+
+         function validatew(){
+            if(isNaN(weight.value)){
+             error4.innerHTML="Pls, enter a number"  
+             return false;
+   
+            }else if(weight.value==""){
+               error4.innerHTML="You can't submit empty input"
+               return false;
+            }
+            else{
+               error4.innerHTML="";
+               return true
+            }
+            
+         }
+   
+   
+         weight.addEventListener("blur" , validatew)
+
+
+
+         function validateh(){
+            if(isNaN(height.value)){
+             error5.innerHTML="Pls, enter a number"  
+             return false;
+   
+            }else if(height.value==""){
+               error5.innerHTML="You can't submit empty input"
+               return false;
+            }
+            else{
+               error5.innerHTML="";
+               return true
+            }
+            
+         }
+         height.addEventListener("blur" , validateh)
+   
+
+
+
+
+     
+
+
+
+
+      // this function calculates bmi
+
+
       function calculate(){
+
+         if(!validatew()){
+            alert("invalid input")        
+            return
+         }
+
+         if(!validateh()){
+            alert("invalid input")      
+            return
+         }
            
         a=Number(weight.value);
         b=Number(height.value);
@@ -237,7 +317,8 @@ let convert3;
               }
 
         
-           let others=[ybmi,result,interpret,comment]
+         //   let others=[ybmi,result,interpret,comment,error4,error5]
+           let others=[error4,error5,ybmi,result,interpret,comment]
 
            for ( let other of others){
               

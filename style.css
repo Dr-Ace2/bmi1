@@ -77,6 +77,10 @@ body{
     color: white;
     font-size: 15px;
 }
+.erro{
+    color: white;
+    font-size: 15px;
+}
 
 .output{
     color: aliceblue;
