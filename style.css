@@ -1,6 +1,6 @@
 body{
     background-color:darkcyan;
-    padding: 10%;
+    padding: 13%;
 }
 
 
@@ -69,4 +69,16 @@ body{
 }
 .btn{
     margin-bottom: 20px;
+}
+#convertc{
+    display: none;
+}
+.error{
+    color: white;
+    font-size: 15px;
+}
+
+.output{
+    color: aliceblue;
+    font-size: 15px;
 }
