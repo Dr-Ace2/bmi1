@@ -147,7 +147,7 @@ let convert3;
 
          fin=Number(foot.value);
          convert2= fin*0.3048;
-         outputf.innerHTML=convert2.toFixed(2)+"kg";
+         outputf.innerHTML=convert2.toFixed(2)+"m";
          
       }
       buttnf.addEventListener( "click" , convertf);
@@ -168,7 +168,7 @@ let convert3;
 
          iin=Number(inch.value);         
          convert3= iin*0.0254;
-         outputi.innerHTML=convert3.toFixed(2)+"kg";
+         outputi.innerHTML=convert3.toFixed(2)+"m";
         
       }
       buttni.addEventListener( "click" , converti);
